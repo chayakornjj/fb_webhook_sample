@@ -40,7 +40,7 @@ app.post('/facebook', function(req, res) {
   console.log('Facebook request body:', JSON.stringify(req.body));
 
   // Process the Facebook updates here
-  received_updates.unshift(req.body);
+  console.log(received_updates.unshift(req.body));
   res.sendStatus(200);
 });
 
